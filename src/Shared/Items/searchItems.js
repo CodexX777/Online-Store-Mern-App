@@ -14,7 +14,7 @@ const SearchItems = () => {
     const fetchSearch = async () => {
       try {
         const res = await sendRequest(
-          `http://localhost:5000/api/products/search/${query}`
+          process.env.REACT_APP_BACKEND_URL+`/api/products/search/${query}`
         );
         setResults(res);
       } catch (error) {}

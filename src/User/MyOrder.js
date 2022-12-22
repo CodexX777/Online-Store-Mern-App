@@ -19,7 +19,7 @@ const MyOrder = () => {
     const fetchItems = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:5000/api/products/myorders/${auth.uid}`,
+          process.env.REACT_APP_BACKEND_URL+`/api/products/myorders/${auth.uid}`,
           "GET",
           null,
           {

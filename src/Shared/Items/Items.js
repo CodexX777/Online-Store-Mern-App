@@ -31,7 +31,7 @@ const Items = (props) => {
 
     try {
       await sendRequest(
-        "http://localhost:5000/api/products/buynow",
+        process.env.REACT_APP_BACKEND_URL+`/api/products/buynow`,
         "POST",
         JSON.stringify({
           pid: props.id,
@@ -43,6 +43,10 @@ const Items = (props) => {
         }
       );
       setBuyPortal(false);
+      if(!error){
+        setStock(stock-1);
+      }
+      
     } catch (error) {}
   };
 
@@ -53,7 +57,7 @@ const Items = (props) => {
 
     try {
       await sendRequest(
-        "http://localhost:5000/api/products/addtocart",
+        process.env.REACT_APP_BACKEND_URL+`/api/products/addtocart`,
         "POST",
         JSON.stringify({
           uid: auth.uid,
@@ -68,21 +72,26 @@ const Items = (props) => {
     } catch (error) {}
   };
 
-  let footerCustContent = (
-    <div>
-      <button className="buy-btn" onClick={buyNowHandler}>
-        BUY NOW
-      </button>
-      <button className="add-btn" onClick={addToCartHandler}>
-        ADD TO CART
-      </button>
-    </div>
-  );
+  let footerCustContent =
+    stock >= 1 ? (
+      <div>
+        <button className="buy-btn" onClick={buyNowHandler}>
+          BUY NOW
+        </button>
+        <button className="add-btn" onClick={addToCartHandler}>
+          ADD TO CART
+        </button>
+      </div>
+    ) : (
+      <div className="out-of-stock">
+        <p>Out of Stock</p>
+      </div>
+    );
 
   const prodUpdateHanlder = async (event, action) => {
     try {
       await sendRequest(
-        "http://localhost:5000/api/myproducts/update",
+        process.env.REACT_APP_BACKEND_URL+`/api/myproducts/update`,
         "PATCH",
         JSON.stringify({
           pid: props.id,
@@ -109,9 +118,7 @@ const Items = (props) => {
   const {
     values,
     handleBlur,
-    touched,
     handleChange,
-    errors,
     handleSubmit,
   } = useFormik({
     initialValues: initialValues,
@@ -169,7 +176,7 @@ const Items = (props) => {
         }
       >
         <div className="buymodal-item-image">
-          <img src={`http://localhost:5000/${props.image}`} alt="item-image" />
+          <img src={process.env.REACT_APP_BACKEND_URL+`/${props.image}`} alt="product" />
         </div>
 
         <div className="buymodal-item-content">
@@ -183,7 +190,7 @@ const Items = (props) => {
           <div>
             <img
               className="item-image"
-              src={`http://localhost:5000/${props.image}`}
+              src={process.env.REACT_APP_BACKEND_URL+`/${props.image}`}
               alt="gamepad"
             />
           </div>

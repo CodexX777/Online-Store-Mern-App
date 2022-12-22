@@ -1,8 +1,6 @@
 import React, { useState, useContext } from "react";
-import SellerLogin from "./SellerLogin";
 import SellerSignUp from "./SellerSignUp";
 import "./SellerAuth.css";
-import sellerImg from "../utilities/seller-img.png";
 import { AuthContext } from "../context/auth-context";
 import LoadingSpinner from "../Shared/LoadingSpinner";
 import { useHttpClient } from "../Hooks/http-hook";
@@ -19,14 +17,12 @@ const SellerAuth = () => {
 
   const { sendRequest, error, isLoading, clearError } = useHttpClient();
 
-  const authSubmitHandler = async (event, action) => {
-    // console.log(event);
-    // auth.sellerLogin();
-    // action.resetForm();
+  const authSubmitHandler = async (event) => {
+   
     if (signUpMode) {
       try {
         const userData = await sendRequest(
-          "http://localhost:5000/api/myproducts/signup",
+          process.env.REACT_APP_BACKEND_URL+"/api/myproducts/signup",
           "POST",
           JSON.stringify(event),
           {
@@ -39,7 +35,7 @@ const SellerAuth = () => {
     } else {
       try {
         const userData = await sendRequest(
-          "http://localhost:5000/api/myproducts/login",
+          process.env.REACT_APP_BACKEND_URL+`/api/myproducts/login`,
           "POST",
           JSON.stringify(event),
           {

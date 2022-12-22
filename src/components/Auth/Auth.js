@@ -16,7 +16,7 @@ const Auth = () => {
     if (isLoginMode) {
       try {
         const user = await sendRequest(
-          "http://localhost:5000/api/user/login",
+          process.env.REACT_APP_BACKEND_URL+"/api/user/login",
           "POST",
           JSON.stringify(event),
           {
@@ -31,7 +31,7 @@ const Auth = () => {
     } else {
       try {
         const user = await sendRequest(
-          "http://localhost:5000/api/user/signup",
+          process.env.REACT_APP_BACKEND_URL+"/api/user/signup",
           "POST",
           JSON.stringify({
             name: event.name,

@@ -13,7 +13,7 @@ const ItemDisplay = () => {
     const fetchItems = async () => {
       try {
         const responseData = await sendRequest(
-          "http://localhost:5000/api/products/"
+          process.env.REACT_APP_BACKEND_URL+`/api/products/`
         );
 
         setProducts(responseData);

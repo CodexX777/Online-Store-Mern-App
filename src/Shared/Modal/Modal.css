@@ -137,6 +137,12 @@
     border-radius: 1rem;
     background-color: #121212;
   }
+  .out-of-stock{
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
   .seller-footer {
     height: 5rem;
     padding: 0rem;
@@ -186,6 +192,8 @@
   }
   .modal__footer {
     background-color: #121212;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
   .buymodal-item-image img {
     height: 20rem;
@@ -253,6 +261,12 @@
     height: 70%;
     border-radius: 2rem;
     background-color: #121212;
+  }
+  .out-of-stock{
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+    margin-left: 1rem;
   }
   .seller-footer {
     height: 5rem;

@@ -1,18 +1,20 @@
 import "./App.css";
-import React from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Auth from "./components/Auth/Auth";
 import MainNav from "./components/Navbar/MainNav";
 import { AuthContext } from "./context/auth-context";
 import SellerAuth from "./Seller/SellerAuth";
 import ItemDisplay from "./Shared/Items/ItemDisplay";
-import Cart from "./User/Cart";
 import AddProduct from "./Seller/AddProduct";
-import MyProduct from "./Seller/MyProduct";
-import MyOrder from "./User/MyOrder";
-import Address from "./User/Address";
 import SearchItems from "./Shared/Items/searchItems";
 import { useAuth } from "./Hooks/auth-hook";
+import LoadingSpinner from "./Shared/LoadingSpinner";
+
+const Cart = React.lazy(() => import("./User/Cart"));
+const MyProduct = React.lazy(() => import("./Seller/MyProduct"));
+const MyOrder = React.lazy(() => import("./User/MyOrder"));
+const Address = React.lazy(() => import("./User/Address"));
 
 function App() {
   const {
@@ -85,7 +87,9 @@ function App() {
     >
       <BrowserRouter>
         <MainNav />
-        <main>{routes}</main>
+        <main>
+          <Suspense fallback={<LoadingSpinner asOverlay />}>{routes}</Suspense>
+        </main>
       </BrowserRouter>
     </AuthContext.Provider>
   );

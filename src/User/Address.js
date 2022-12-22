@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useFormik } from "formik";
 import { AddressSchema } from "../schemas/AddressSchema";
 import "./Address.css";
@@ -12,13 +12,12 @@ import ErrorModal from "../Shared/FormElements/ErrorModal";
 const Address = () => {
   const auth = useContext(AuthContext);
   const navigate=useNavigate();
-  //fetch the current user address
   const { sendRequest, error, clearError, isLoading } = useHttpClient();
-  const addressSubmitHandler = async (event, action) => {
+  const addressSubmitHandler = async (event) => {
     try {
       console.log(auth.uid);
       await sendRequest(
-        `http://localhost:5000/api/user/address/${auth.uid}`,
+        process.env.REACT_APP_BACKEND_URL+`/api/user/address/${auth.uid}`,
         "PATCH",
         JSON.stringify(event),
         {

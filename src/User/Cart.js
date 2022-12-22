@@ -22,7 +22,7 @@ const Cart = () => {
     const fetchCartItems = async () => {
       try {
         cartItems = await sendRequest(
-          `http://localhost:5000/api/user/cart/${auth.uid}`,
+          process.env.REACT_APP_BACKEND_URL+`/api/user/cart/${auth.uid}`,
           "GET",
           null,
           { Authorization: "Bearer " + auth.token }
@@ -63,7 +63,7 @@ const Cart = () => {
 
     try {
       await sendRequest(
-        "http://localhost:5000/api/products/remove",
+        process.env.REACT_APP_BACKEND_URL+`/api/products/remove`,
         "POST",
         JSON.stringify({
           uid: auth.uid,
@@ -96,7 +96,7 @@ const Cart = () => {
 
     try {
       await sendRequest(
-        "http://localhost:5000/api/products/buycart",
+        process.env.REACT_APP_BACKEND_URL+`/api/products/buycart`,
         "POST",
         JSON.stringify({
           uid: auth.uid,

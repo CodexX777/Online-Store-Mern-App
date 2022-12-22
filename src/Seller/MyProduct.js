@@ -16,7 +16,7 @@ const MyProduct = () => {
     const fetchItems = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:5000/api/myproducts/${auth.uid}`,"GET",null,{
+          process.env.REACT_APP_BACKEND_URL+`/api/myproducts/${auth.uid}`,"GET",null,{
             "Authorization":"Bearer "+auth.token
           }
         );

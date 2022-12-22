@@ -6,7 +6,7 @@ const CartItem = (props) => {
     <li className="cart-item">
       <img
         className="cart-item-image"
-        src={`http://localhost:5000/${props.image}`}
+        src={process.env.REACT_APP_BACKEND_URL+`/${props.image}`}
         alt={props.name}
       />
       <div className="item-details">

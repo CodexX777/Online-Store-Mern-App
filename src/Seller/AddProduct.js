@@ -36,7 +36,7 @@ const AddProduct = () => {
       formData.append("uid", auth.uid);
       formData.append("file", event.file);
       await sendRequest(
-        "http://localhost:5000/api/myproducts/add",
+        process.env.REACT_APP_BACKEND_URL+"/api/myproducts/add",
         "POST",
         formData,
         {

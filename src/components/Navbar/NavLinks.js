@@ -22,9 +22,9 @@ const NavLinks = () => {
       )}
       {(auth.isLoggedIn || auth.isSeller) && (
         <li>
-          <div class="dropdown">
+          <div className="dropdown">
             <span>My Account</span>
-            <div class="dropdown-content">
+            <div className="dropdown-content">
               {auth.isLoggedIn && !auth.isSeller && (
                 <NavLink className="dropdown-menu-user-link" to="/myorder">
                   My Orders
@@ -71,7 +71,7 @@ const NavLinks = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_11_128)">
+              <g clipPath="url(#clip0_11_128)">
                 <path
                   d="M34.8482 13.4483C35.6868 11.4303 37.6653 10.1225 39.8505 10.1418L52.7241 10.2551C56.5305 10.2886 59.0927 14.1647 57.6319 17.6799L52.6915 29.5683C51.8529 31.5863 49.8744 32.8941 47.6892 32.8748L34.8156 32.7615C31.0092 32.728 28.4471 28.8519 29.9078 25.3367L34.8482 13.4483Z"
                   fill="#D9D9D9"
