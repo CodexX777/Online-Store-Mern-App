@@ -1,0 +1,33 @@
+@media (max-width: 650px) {
+  .myorder-address-panel {
+    box-shadow: 0 0 1.5rem rgb(47, 255, 10);
+    color: white;
+    font-family: "Inder";
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #141414;
+    border-radius: 2rem;
+    padding-left: 5.3rem;
+    padding-right: 5.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: fit-content;
+  }
+}
+
+@media (min-width: 650px) {
+  .myorder-address-panel {
+    box-shadow: 0 0 1.5rem rgb(47, 255, 10);
+    margin-top: 2rem;
+    background-color: #141414;
+    border-radius: 2rem;
+    width: 25%;
+    padding: 2rem;
+    margin-left: 4rem;
+    height: 100%;
+    color: white;
+    font-family: "Inder";
+    font-size: 2rem;
+  }
+}

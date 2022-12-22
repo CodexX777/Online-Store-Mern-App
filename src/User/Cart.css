@@ -1,0 +1,138 @@
+@media(min-width:650px){
+    .cart{
+
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height:45rem;
+    }
+    .cart-panel{
+        
+        width: 70%;
+        margin-right: 4rem;
+    }
+    .cart-list{
+        box-shadow: 0 0 1.5rem rgb(47, 255, 10);
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-top: 2rem;
+        background-color: #141414;
+        border-radius: 2rem;
+        margin-right: 1.5rem;
+        height: 45rem;
+        width: 100%;
+        padding: 2rem;
+        margin-left: 1.5rem;
+    }
+    .order-summary{
+        box-shadow: 0 0 1.5rem rgb(47, 255, 10);
+        margin-top: 2rem;
+        background-color: #141414;
+        border-radius: 2rem;
+        width: 25%;
+        padding: 2rem;
+        margin-left: 4rem;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr 4fr 1fr;
+    }
+    .order-summary h2{
+        color:white;
+        font-size: 3rem;
+        margin:0rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .order-summary h3{
+        color:white;
+        font-size: 2rem;
+    }
+    .cart-buy-btn{
+        border: none;
+        outline: none;
+        background-color: #BFBFBF;
+        border-radius: 1rem;
+        height: 4rem;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Inder';
+        white-space: nowrap;
+        font-size:2rem;
+        padding-left: 30%;
+        padding-right: 30%;
+        font-weight: 600;
+        margin-top: auto;
+        margin-bottom: auto;
+       
+    }
+    
+}
+
+
+
+@media(max-width:650px){
+    .cart{
+        display: flex;
+        flex-direction: column;
+    }
+    .cart-list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0rem;
+    }
+    .order-summary{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60rem;
+        background-color: #141414;
+        border-radius: 2rem;
+        margin-bottom: 4rem;
+    }
+    .order-summary h2{
+        color: white;
+        font-family: 'Inder';
+        font-size: 6rem;
+        font-weight: 100;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .order-summary h3{
+        color: white;
+        font-family: 'Inder';
+        font-size: 3rem;
+        font-weight: 100;
+        margin-left: 8rem;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+    .cart-buy-btn{
+        border: none;
+        outline: none;
+        background-color: #BFBFBF;
+        border-radius: 2rem;
+        height: 7rem;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15rem;
+        padding-right: 15rem;
+        font-family: 'Inder';
+        font-size:4rem;
+        font-weight: 600;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+    }
+
+
+}

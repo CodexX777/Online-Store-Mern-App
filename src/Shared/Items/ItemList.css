@@ -1,0 +1,26 @@
+.item-panel {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0rem;
+}
+.item-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0rem;
+  justify-content: space-between;
+}
+.not-found {
+  width: 100%;
+  text-align: center;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10rem;
+  left: 55rem;
+}

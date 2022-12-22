@@ -1,0 +1,226 @@
+
+
+
+.seller-auth-form {
+  margin-left: auto;
+  margin-right: auto;
+  
+  width: 100rem;
+  height: 45rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 1.5rem rgb(47, 255, 10);
+  background-color: #121212;
+  border-radius: 2rem;
+}
+
+.seller-auth-form-view {
+
+  width: 100%;
+}
+.seller-signup-form {
+  margin: 0rem;
+
+  display: grid;
+  grid-template-columns: 1rem 12rem 12rem 12rem 12rem 12rem 12rem 12rem 12rem;
+  grid-template-rows: 10rem 10rem 10rem 10rem;
+}
+
+.seller-input-field1 {
+  width: fit-content;
+  height: fit-content;
+  grid-row: 1/2;
+  grid-column: 1/6;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.seller-input-field4 {
+  width: fit-content;
+  height: fit-content;
+  grid-row: 2/3;
+  grid-column: 1/6;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.seller-input-field5 {
+  width: fit-content;
+  height: fit-content;
+  grid-row: 3/4;
+  grid-column: 1/6;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.seller-input-field2 {
+  width: fit-content;
+  height: fit-content;
+  grid-column: 6/10;
+  grid-row: 1/2;
+
+  margin-top: 5%;
+}
+.seller-input-field3 {
+  width: fit-content;
+  height: fit-content;
+  grid-column: 6/10;
+  grid-row: 2/3;
+
+  margin-top: 5%;
+}
+.seller-input-field6 {
+  width: fit-content;
+  height: fit-content;
+  grid-column: 6/10;
+  grid-row: 3/4;
+
+  margin-top: 5%;
+}
+
+.seller-signup-form .form-submit-btn {
+  grid-row: 4/5;
+  grid-column: 6/8;
+  position: relative;
+  top: 1rem;
+}
+
+.seller-signup-btn {
+  grid-row: 4/5;
+  height: fit-content;
+  width: fit-content;
+  white-space: nowrap;
+  position: relative;
+  left: 4rem;
+  background-color: #121212;
+  font-family: 'Inder';
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.seller-signup-btn:hover {
+  color: rgb(213, 213, 213);
+}
+.seller-placeholder {
+  white-space: nowrap;
+  position: relative;
+  right: 26.8rem;
+  bottom: 3rem;
+  font-size: 1.5rem;
+
+  font-family: "Inder";
+  font-weight: 600;
+  color: white;
+}
+
+.seller-input-error1 {
+  height: fit-content;
+  width: fit-content;
+  grid-row: 1/2;
+  grid-column: 1/4;
+  position: relative;
+  top: 6rem;
+  left: 12.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Inder";
+  padding: 0rem;
+  margin: 0rem;
+  color: rgb(47, 255, 10);
+}
+
+.seller-input-error2 {
+  height: fit-content;
+  width: fit-content;
+  grid-column: 6/8;
+  grid-row: 1/2;
+  position: relative;
+  top: 6rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Inder";
+  padding: 0rem;
+  margin: 0rem;
+  color: rgb(47, 255, 10);
+}
+
+.seller-input-error3 {
+  height: fit-content;
+  width: fit-content;
+  grid-column: 6/8;
+  grid-row: 2/3;
+  position: relative;
+  top: 6rem;
+ 
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Inder";
+  padding: 0rem;
+  margin: 0rem;
+  color: rgb(47, 255, 10);
+}
+
+.seller-input-error4 {
+  height: fit-content;
+  width: fit-content;
+  grid-row: 2/3;
+  grid-column: 1/5;
+  position: relative;
+  top: 6rem;
+  left: 12.4rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Inder";
+  padding: 0rem;
+  margin: 0rem;
+  color: rgb(47, 255, 10);
+}
+
+.seller-input-error5 {
+  height: fit-content;
+  width: fit-content;
+  grid-row: 3/4;
+  grid-column: 1/4;
+  position: relative;
+  top: 6rem;
+  left: 12.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Inder";
+  padding: 0rem;
+  margin: 0rem;
+  color: rgb(47, 255, 10);
+}
+
+.seller-input-error6 {
+  height: fit-content;
+  width: fit-content;
+  grid-column: 4/8;
+  grid-row: 3/4;
+
+  position: relative;
+  top: 6rem;
+  left: 24rem;
+  font-weight: 600;
+  font-family: "Inder";
+  padding: 0rem;
+  margin: 0rem;
+  color: rgb(47, 255, 10);
+}
+
+
+@media only screen and (max-width: 900px) {
+  .seller-auth-form {
+    width: 80rem;
+    height: auto;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .seller-signup-form {
+    grid-template-columns: 1rem 8rem 8rem 8rem;
+    grid-template-rows: 8rem 8rem 8rem 8rem;
+  }
+}

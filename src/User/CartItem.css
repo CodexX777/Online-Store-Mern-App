@@ -1,0 +1,165 @@
+@media (min-width: 650px) {
+  .cart-item {
+    background-color: #696565;
+    border-radius: 2rem;
+    height: 16rem;
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: row;
+  }
+  .cart-item-image {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .item-details {
+    color: white;
+    font-family: "Inder";
+    margin-left: 1.5rem;
+    width: 100%;
+  }
+  .item-remove-btn {
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    outline: none;
+  }
+  .name-container {
+    width: fit-content;
+    height: fit-content;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  .cart-item-name {
+    font-size: 2rem;
+    margin: 0rem;
+    margin-top: 1.5rem;
+    padding: 0rem;
+    text-transform: capitalize;
+    font-weight: 300;
+  }
+  .cart-item-rating {
+    margin-top: 1rem;
+    height: fit-content;
+    width: fit-content;
+  }
+  .cart-item-rating p {
+    position: relative;
+    bottom: 3.5rem;
+    left: 7rem;
+    font-size: 1.3rem;
+  }
+  .cart-item-price {
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 4rem;
+  }
+  .cart-item-quantity {
+    position: relative;
+    font-size: 1.3rem;
+    bottom: 7.6rem;
+    left: 13rem;
+  }
+  .item-remove-btn {
+    border: none;
+    outline: none;
+    background-color: #696565;
+    color: white;
+    font-size: 1.7rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .cart-item {
+    box-shadow: 0 0 1.5rem rgb(47, 255, 10);
+    background-color: #141414;
+    border-radius: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .cart-item-image {
+    width: 14rem;
+    height: 15rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  .item-details {
+    color: white;
+    font-family: "Inder";
+    margin-left: 2rem;
+    width: 100%;
+  }
+  .item-remove-btn {
+    border: none;
+    outline: none;
+    font-family: "Inder";
+    height: fit-content;
+    position: relative;
+    top: 20rem;
+    right: 25rem;
+    color: white;
+    font-size: 2.5rem;
+    background-color: #141414;
+  }
+  .cart-item-rating {
+    position: relative;
+    top: 13rem;
+    right: 16rem;
+    color: white;
+  }
+
+  .cart-item-rating p {
+    font-size: 2.5rem;
+    margin: 0rem;
+    position: relative;
+    width: fit-content;
+    left: 8rem;
+    bottom: 4rem;
+  }
+  .name-container {
+    padding: 0rem;
+    margin: 0rem;
+    max-width: 100%;
+  }
+  .cart-item-name {
+    font-size: 3rem;
+    margin: 0rem;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    font-weight: 200;
+  }
+  .cart-item-price {
+    font-size: 2.3rem;
+    position: relative;
+    bottom: 9rem;
+  }
+  .cart-item-quantity {
+    font-size: 1.8rem;
+    position: relative;
+    bottom: 14.5rem;
+    left: 25rem;
+    width: fit-content;
+  }
+  .myorder-prod {
+    color: white;
+    position: relative;
+    top: 12rem;
+    height: fit-content;
+    margin: 0rem;
+    width: fit-content;
+    white-space: nowrap;
+    right: 22rem;
+    font-size: 2rem;
+  }
+}

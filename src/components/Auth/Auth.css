@@ -1,0 +1,255 @@
+.auth-panel {
+  box-shadow: 0 0 1.5rem rgb(47, 255, 10);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  width: 60rem;
+  height: 40rem;
+  background-color: #121212;
+  border-radius: 2rem;
+}
+
+.auth-panel-heading svg {
+  margin-left: 4rem;
+  margin-top: 3.5rem;
+  height: 4rem;
+  width: 10rem;
+}
+
+.auth-form_view {
+  background-color: #121212;
+  margin-left: 12rem;
+  padding: 1rem;
+  width: 35rem;
+  height: 25rem;
+}
+.auth-form {
+  margin-top: 2rem;
+  height: 100%;
+  width: 100%;
+}
+.placeholder {
+  position: relative;
+  right: 26.8rem;
+  bottom: 3rem;
+  font-size: 1.5rem;
+  font-family: "Inder";
+  font-weight: 600;
+  color: white;
+}
+.input-field {
+  margin-bottom: 6rem;
+  width: fit-content;
+}
+.auth-form input,
+.auth-form input:focus {
+  border: none;
+  outline: none;
+  border-radius: 1.2rem;
+  height: 3.5rem;
+  width: 25rem;
+  background-color: #bfbfbf;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.form-input-error {
+  position: relative;
+  bottom: 5.5rem;
+  left: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Inder";
+  padding: 0rem;
+  margin: 0rem;
+  color: rgb(47, 255, 10);
+}
+
+.form-submit-btn {
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 2rem;
+  border: none;
+  position: relative;
+  bottom: 4rem;
+  left: 20rem;
+  background-color: #bfbfbf;
+  font-family: "Inder";
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #121212;
+}
+
+.form-submit-btn:hover {
+  background-color: rgb(47, 255, 10);
+}
+.form-submit-btn:focus {
+  background-color: rgb(28, 178, 2);
+}
+
+.signup-btn {
+  background-color: #121212;
+  border: none;
+  outline: none;
+  position: relative;
+  font-family: "Inder";
+  font-size: 1.5rem;
+  font-weight: 500;
+  bottom: 3rem;
+  color: white;
+}
+
+.signup-btn:hover {
+  color: #bfbfbf;
+}
+
+.signup-auth-form_view {
+  width: 100%;
+}
+
+.signup-auth-form {
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem 6rem 6rem 6rem 6rem 6rem 6rem 6rem;
+  grid-template-rows: 8rem 8rem 8rem 8rem;
+  margin-top: 0.8rem;
+  height: 100%;
+  width: 100%;
+}
+
+.signup-auth-form input,
+.signup-auth-form input:focus {
+  border: none;
+  outline: none;
+  border-radius: 1.2rem;
+  height: 3.5rem;
+  width: 20rem;
+  background-color: #bfbfbf;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.signup-auth-form .placeholder {
+  position: relative;
+  right: 0rem;
+  bottom: 6rem;
+}
+
+.input-field1 {
+  grid-column: 2/5;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.input-field2 {
+  grid-column: 6/10;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.input-field3 {
+  grid-row: 2/3;
+  grid-column: 2/5;
+  margin-top: 7rem;
+  margin-left: 3rem;
+}
+
+.input-field4 {
+  grid-row: 2/3;
+  grid-column: 6/10;
+  margin-top: 7rem;
+  margin-left: 3rem;
+}
+
+.signup-auth-form .signup-btn {
+  grid-row: 3/4;
+  grid-column: 3/8;
+  align-self: center;
+  margin-top: 20rem;
+}
+
+.signup-form-submit-btn {
+  grid-column: 8/10;
+  grid-row: 4/5;
+  margin-right: 20rem;
+  position: relative;
+  left: 5rem;
+  bottom: 2rem;
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #bfbfbf;
+  font-family: "Inder";
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #121212;
+}
+
+.signup-form-submit-btn:hover {
+  background-color: rgb(47, 255, 10);
+}
+.signup-form-submit-btn:focus {
+  background-color: rgb(28, 178, 2);
+}
+
+.form-input-error1 {
+  position: relative;
+  left: 3rem;
+  bottom: 1rem;
+  grid-column: 2/6;
+  height: fit-content;
+  width: fit-content;
+  grid-row: 2/3;
+  margin-left: 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Inder";
+  padding: 0rem;
+  margin: 0rem;
+  color: rgb(47, 255, 10);
+}
+.form-input-error2 {
+  position: relative;
+  left: 3rem;
+  bottom: 1rem;
+  grid-row: 2/3;
+  grid-column: 6/10;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Inder";
+  padding: 0rem;
+  height: fit-content;
+  width: fit-content;
+  margin: 0rem;
+  color: rgb(47, 255, 10);
+}
+.form-input-error3 {
+  position: relative;
+  left: 3rem;
+  top: 3.3rem;
+  grid-row: 3/4;
+  grid-column: 2/6;
+  font-size: 1rem;
+  font-weight: 600;
+  height: fit-content;
+  width: fit-content;
+  font-family: "Inder";
+  padding: 0rem;
+  margin: 0rem;
+  color: rgb(47, 255, 10);
+}
+.form-input-error4 {
+  position: relative;
+  left: 3rem;
+  top: 3.3rem;
+  height: fit-content;
+  width: fit-content;
+  grid-row: 3/4;
+  grid-column: 6/10;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Inder";
+  padding: 0rem;
+  margin: 0rem;
+  color: rgb(47, 255, 10);
+}

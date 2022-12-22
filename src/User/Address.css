@@ -1,0 +1,87 @@
+#updateAddress {
+  margin: 1rem;
+  margin-left: calc(50% - 25rem);
+  margin-top: 4rem;
+}
+#updateAddress  textarea {
+  background-color: #dddddd;
+  color: #666666;
+  padding: 2.5rem;
+  border-radius: 2rem;
+  border: 0.2rem solid transparent;
+  outline: none;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 1.4;
+  width: 45rem;
+  height: 20.3rem;
+  transition: all 0.2s;
+}
+#updateAddress textarea:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+#updateAddress textarea:focus {
+  cursor: text;
+  color: #333333;
+  background-color: white;
+  border-color: #333333;
+}
+
+.address-input-error {
+  display: block;
+  margin-left: 39rem;
+  text-align: left;
+  font-size: 1.2rem;
+  color: orangered;
+  padding: 0%;
+}
+.updateaddress {
+  outline: none;
+  border: none;
+  padding: 1rem;
+  background-color: orangered;
+  border-radius: .5rem;
+  color: white;
+  font-weight: 500;
+  font-size: larger;
+  margin: 1rem;
+  margin-left: 55rem;
+  width: 20rem;
+}
+.updateaddress{
+  width: 20rem;
+  font-family: 'Inder';
+  font-size: 2rem;
+  white-space: nowrap;
+  margin-left: calc(50% - 10rem);
+  height: 5rem;
+  border-radius: 1rem;
+  background-color: #BFBFBF;
+  color: black;
+  font-weight: 600;
+}
+
+@media(max-width:650px){
+  #updateAddress{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+  }
+  #updateAddress textarea{
+    width: 35rem;
+  }
+  .updateaddress{
+    width: 20rem;
+    font-family: 'Inder';
+    font-size: 2rem;
+    white-space: nowrap;
+    margin-left: calc(50% - 10rem);
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: #BFBFBF;
+    color: black;
+    font-weight: 600;
+  }
+}

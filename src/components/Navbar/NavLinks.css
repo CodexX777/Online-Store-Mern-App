@@ -1,0 +1,54 @@
+.dropdown-menu-seller-link {
+  width: fit-content;
+  white-space: nowrap;
+  display: block;
+  background-color: #141414;
+  color: white;
+  margin-bottom: 1rem;
+}
+.navigation-frame span {
+  color: #dedede;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.dropdown-menu-user-link {
+  width: 9.5rem;
+  display: block;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+
+.dropdown-menu-btn {
+  background-color: #141414;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  width: 9.5rem;
+  display: block;
+  white-space: nowrap;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: white;
+  background-color: #141414;
+  padding: 1rem;
+  width: 15rem;
+  text-align: center;
+  box-shadow: 0rem 0.8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
+  padding: 1.2rem 1.6rem;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
