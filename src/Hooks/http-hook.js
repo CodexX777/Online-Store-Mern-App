@@ -33,6 +33,7 @@ export const useHttpClient = () => {
 
         return responseData;
       } catch (error) {
+        console.log(error);
         setError(error.message);
         setIsLoading(false);
         throw error;

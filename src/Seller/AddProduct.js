@@ -44,7 +44,9 @@ const AddProduct = () => {
         }
       );
       navigate("/");
-    } catch (err) {}
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   const initialValues = {

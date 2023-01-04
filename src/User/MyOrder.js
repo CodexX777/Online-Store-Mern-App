@@ -6,6 +6,8 @@ import { AuthContext } from "../context/auth-context";
 import { useHttpClient } from "../Hooks/http-hook";
 import LoadingSpinner from "../Shared/LoadingSpinner";
 import ErrorModal from "../Shared/FormElements/ErrorModal";
+import "./Cart.css";
+
 
 const MyOrder = () => {
   const auth = useContext(AuthContext);
@@ -28,9 +30,11 @@ const MyOrder = () => {
         );
 
         setProducts(responseData);
+        console.log(responseData);
       } catch (error) {}
     };
     fetchItems();
+    
   }, [sendRequest]);
 
   return (
@@ -46,7 +50,7 @@ const MyOrder = () => {
                 key={index}
                 name={item.prodName}
                 price={item.prodPrice}
-                image={item.prodImage}
+                image={item.imageUrl}
                 rating={item.rating}
                 MyOrder={true}
               />

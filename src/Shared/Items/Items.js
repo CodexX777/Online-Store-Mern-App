@@ -176,7 +176,7 @@ const Items = (props) => {
         }
       >
         <div className="buymodal-item-image">
-          <img src={process.env.REACT_APP_BACKEND_URL+`/${props.image}`} alt="product" />
+          <img src={props.image} alt="product" />
         </div>
 
         <div className="buymodal-item-content">
@@ -190,8 +190,8 @@ const Items = (props) => {
           <div>
             <img
               className="item-image"
-              src={process.env.REACT_APP_BACKEND_URL+`/${props.image}`}
-              alt="gamepad"
+              src={props.image}
+              alt="product"
             />
           </div>
           <div className="item-name">

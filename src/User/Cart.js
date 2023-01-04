@@ -52,6 +52,7 @@ const Cart = () => {
 
       setProducts(newCartItems);
       setCartTotal(newCartTotal);
+      console.log(newCartItems);
     });
   }, [sendRequest]);
 
@@ -115,6 +116,8 @@ const Cart = () => {
     } catch (error) {}
   };
 
+
+
   return (
     <>
       {isLoading && <LoadingSpinner asOverlay />}
@@ -128,7 +131,7 @@ const Cart = () => {
                 key={index}
                 name={item.prodName}
                 price={item.prodPrice}
-                image={item.prodImage}
+                image={item.imageUrl}
                 rating={item.prodRating}
                 quantity={item.quantity}
                 itemDeleteHandler={itemDeleteHandler}

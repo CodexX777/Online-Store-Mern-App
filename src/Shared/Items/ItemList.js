@@ -11,6 +11,8 @@ const ItemList = (props) => {
     );
   }
 
+  console.log(props);
+
   return (
     <div className="item-panel">
       <ul className="item-list">
@@ -21,7 +23,7 @@ const ItemList = (props) => {
             quantity={item.prodStock}
             name={item.prodName}
             price={item.prodPrice}
-            image={item.prodImage}
+            image={item.imageUrl}
             rating={item.rating}
             uid={item.uid}
             description={item.prodDesc}
