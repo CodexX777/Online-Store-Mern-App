@@ -1,6 +1,6 @@
 .modal {
   z-index: 100;
-  position: absolute;
+  position: fixed;
   width: 70rem;
   max-height: 90vh;
   background: #a8a6a6;
@@ -131,7 +131,7 @@
 @media (min-width: 660px) {
   .modal {
     width: 70rem;
-    position: absolute;
+    position: fixed;
     left: calc(50% - 35rem);
     top: 10rem;
     border-radius: 1rem;
@@ -255,7 +255,7 @@
 @media (max-width: 660px) {
   .modal {
     width: 50rem;
-    position: absolute;
+    position: fixed;
     left: calc(50% - 25rem);
     top: 10rem;
     height: 70%;
