@@ -1,3 +1,7 @@
+Note: This project is not deployed anymore due to the closure of Cyclic hosting platform, Will redeploy the backend to some the platform soon.
+
+
+
 #Online Store Url https://online-shop-3275b.web.app/
 
 This is a full stack MERN app using aws s3 bucket for file storage.
